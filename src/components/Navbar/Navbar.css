@@ -1,0 +1,175 @@
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container ul{
+  list-style: none;
+  
+}
+.options li a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the color from the parent */
+}
+.options li a:hover {
+  color: orange; /* Optional: Add hover effect */
+}
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(253, 249, 188);
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Navigation Options */
+.options {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.options h3 {
+    transition: color 0.3s ease;
+}
+
+.options h3:hover {
+    color: orange; /* Hover color */
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Buttons */
+.loginBtn,
+.signupBtn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loginBtn {
+    color: orange;
+    background-color: white;
+}
+
+.signupBtn {
+    color: white;
+    background-color: orange;
+}
+
+.loginBtn::before,
+.signupBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2ecc71; /* Hover background */
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+
+.loginBtn:hover::before,
+.signupBtn:hover::before {
+    left: 0;
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+    color: black; /* Text color change on hover */
+}
+
+.loginBtn span,
+.signupBtn span {
+    position: relative;
+    z-index: 1; /* Keep text above background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .btn-container {
+        margin-bottom: 10px;
+    }
+}
+.logoutBtn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+
+  .logoutBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #f53012; /* Hover background */
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+.logoutBtn:hover::before {
+    left: 0;
+}
+.logoutBtn span {
+    position: relative;
+    z-index: 1; /* Keep text above background */
+}
+.logoutBtn:hover {
+    color: black; /* Text color change on hover */
+}

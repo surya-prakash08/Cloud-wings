@@ -1,0 +1,25 @@
+.travel-class-container{
+    /* position: static; */
+    
+    display: flex;
+    width: 15vw;
+    gap: 7px;
+    border: 1px solid black;
+    height: 80px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    /* background-color: white; */
+    display: flex;
+}
+.number-of-travelers{
+    width: 7vw;
+    
+    
+}
+
+.class{
+    width: 10vw;
+    margin-right: 5px;
+    
+}

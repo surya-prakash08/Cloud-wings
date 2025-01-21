@@ -1,0 +1,149 @@
+.main{
+  background-color: rgb(252,229,99);
+  height: 65vh;
+  width: 100%;
+  
+  
+}
+.booking-para{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 34px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.booking-container{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: auto; */
+    /* margin-top: -1%; */
+    /* background-color: rgb(246, 247, 183); */
+    gap: 20px;
+    padding-top: 66px;
+}
+.city-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 5px;
+}
+.city-input{
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: 10px;
+    flex-grow: 1;
+    margin-left: 8px;
+    text-align: center;
+}
+
+.suggestions-list {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: rgb(244, 233, 133);
+    
+    width: 200px;
+    max-height: 150px;
+    overflow-y: hidden;
+    /* margin-top: 5px; */
+    padding: 0;
+    list-style-type: none;
+    z-index: 10;
+  }
+  
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: orange; /* Light gray background on hover */
+    color: #f9f9f7; /* Optional: Change text color */
+  }
+  .all-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -200px; */
+    gap: 20px;
+  }
+  .Departure-city{
+    display: flex;
+    width: 19vw;
+
+    border: 1px solid black;
+    height: 80px;
+    align-items: center;
+    border-radius: 15px;
+    
+  }
+  .city-input-container {
+    display: flex;
+    align-items: center;
+}
+.airport-code {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+    width: 50px;
+    height: 19px;
+    border-radius:15px ;
+    border: 1px solid black;
+    background-color: black;
+}
+.flight-logo{
+    margin-left: 5px;
+
+}
+.serachButtonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 23px;
+  
+}
+.searchBtn{
+  position: relative;
+    display: inline-block;
+    overflow: hidden;
+  width: 20vw;
+  height: 60px;
+  background-color: rgb(99, 210, 14);
+  align-self: right;
+  border: none;
+  border-radius: 15px;
+  font-size: larger;
+  color: white;
+  transition: color 1s ease;
+  cursor: pointer;
+  
+}
+
+.searchBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #602ecc; /* Hover color */
+  transition: left 0.9s ease;
+  z-index: 0;
+}
+
+.searchBtn:hover::before {
+  left: 0;
+}
+
+.searchBtn:hover {
+  color: white; /* Change text color when hovered */
+}
+
+.searchBtn span {
+  position: relative;
+  z-index: 1; /* Ensures text stays above the background */
+}

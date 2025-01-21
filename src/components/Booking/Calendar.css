@@ -1,0 +1,125 @@
+.calendar-container {
+    position: absolute;
+    background: rgb(255, 170, 176);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 11px;
+    z-index: 1000;
+    width: 270px;
+    height: 270px;
+    margin-left: 9vw;
+    margin-top: 45vh;
+   
+}
+.departure-date{
+    /* position: static; */
+    
+    display: flex;
+    width: 11vw;
+    gap: 7px;
+    border: 1px solid black;
+    height: 80px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    /* background-color: white; */
+}
+.dateDetails{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.dropdownButton{
+    cursor: pointer;
+}
+
+.react-calendar {
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 15%;
+    background-color: white;
+}
+
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.react-calendar__navigation button {
+    margin: 0 8px;
+    background: transparent;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+.react-calendar__navigation button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.react-calendar__month-view__weekdays {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    gap: 2px;
+}
+
+/* Calendar days */
+.react-calendar__tile {
+    /* background: white; */
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 15px;
+    transition: all 0.5s ease;
+}
+
+.react-calendar__tile:hover {
+    background: #adfa12;
+    border-color: #122b24;
+}
+/* Selected day */
+.react-calendar__tile--active {
+    background: #172318;
+    color: white;
+    font-weight: bold;
+    border-color: #4caf50;
+}
+/* Today's date */
+.react-calendar__tile--now {
+    background: #e0f7fa;
+    font-weight: bold;
+    border-color: #b2ebf2;
+}
+/* Disabled dates */
+.react-calendar__tile--disabled {
+    background: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+}
+/* Month and year view tiles */
+.react-calendar__tile--hasActive {
+    background: #dcedc8;
+    border-color: #69903b;
+}
+.react-calendar__tile--disabled {
+    background: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+    text-decoration: line-through; /* Optional for emphasis */
+}

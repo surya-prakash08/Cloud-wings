@@ -1,0 +1,92 @@
+.my-booking-container{
+    
+   /* padding-top:80px ; */
+    background-color: rgb(253, 249, 188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.booking-details{
+    gap: 25px;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(4, 0, 128);
+    color: white;
+}
+
+.booking-details p{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.noFlight {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    font-size: medium;
+    font-weight: bold;
+    color: red;
+}
+.confirm-flight-details{
+    /* width: 40vw;
+    height: 40px; */
+    /* width: 100%; */
+    display: flex;
+    
+    align-items: center;
+    justify-self: center;
+    /* border: 1px solid red; */
+    color: green;
+    font-weight: bolder;
+}
+.confirm-flight-details p{
+    text-align: center;
+    font-size: 40px;
+}
+.flight-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    gap: 25px;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+    /* margin: 7px; */
+    width: 43.7vw;
+    height: 17vh;
+    background-color: rgb(37, 142, 246);
+    color: white;
+
+}
+.flight-info p{
+    font-weight: 600;
+}
+.login-prompt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 30px;
+    gap: 20px;
+    font-weight: bold;
+}
+.login-prompt button{
+    width: 140px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+    margin-bottom: 395px;
+}
